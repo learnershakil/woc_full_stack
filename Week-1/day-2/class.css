@@ -1,0 +1,196 @@
+/* .helo{
+    background-color: sandybrown;
+    color: white;
+}
+
+#demo:hover{
+    background-color: red;
+    color: white;
+} */
+
+[type="text"]{
+    background-color: green;
+    color: white;
+}
+
+/* p::first-line{
+    color: red;
+    font-size: 30px;
+} */
+
+/* p::first-letter{
+    color: blue;
+    font-size: 30px;
+} */
+
+.learner{
+    color: blue;
+}
+
+/* leave the comment  */
+
+p{
+    font-family: Arial, sans-serif;
+}
+
+.winter{
+    font-size: 2em;
+}
+
+.code{
+    font-weight: 700;
+}
+
+.shakil{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#sam{
+    line-height: 1.5;
+}
+
+#ayushman{
+    background-color: lightskyblue;
+    border: 5px dotted black;
+    width: 80px;
+    height: 50px;
+    margin-top: 50px;
+    padding: 2px 5px 10px 15px;
+}
+
+#sameer{
+    box-sizing: border-box;
+    border: 2px dashed black;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    padding:80px;
+    background-color: rgba(11, 210, 68, 0.728);
+    color: white;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#padhao{
+    background-color: lightcoral;
+    /* display: none; */
+    /* visibility: hidden; */
+    border: 2px solid black;
+
+}
+
+#bored{
+    background-color: rgb(72, 0, 255);
+    border: 2px solid black;
+    margin-top: 10px;
+    height: 25vh;
+    width: 25vw;
+    /* position: sticky; */
+    position: relative;
+    left: 250px;
+    top: -40px;
+    z-index: -1;
+}
+
+#main-div{
+    background-color: rgb(35, 198, 248);
+    border: 2px solid black;
+    margin-top: 10px;
+    width: 60vw;
+    height: 80vh;
+
+}
+
+#div2{
+    background-color: darkorange;
+    border: 2px solid black;
+    width: 20vh;
+    height: 20vh;
+    float: right;
+
+}
+
+#mainh{
+    background-color: bisque;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+#fixh{
+    background-color: aqua;
+    width: 20vw;
+    height: 20vh;
+    top: 20vh;
+}
+
+#floath{
+    background-color: darkmagenta;
+    width: 20vw;
+    height: 20vh;
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+#flextime{
+ background-color: cornsilk;
+ width: 80vw;
+    height: 80vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+.aa{
+    background-color: red;
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid black;
+}
+
+/* .bb{
+    background-color: blue;
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid black;
+} */
+
+/* .cc{
+    background-color: green;
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid black;
+} */
+
+h1:hover{
+    background-color: red;
+    color: white;
+}
+
+/* @keyframes back {
+    from{
+        background-color: red;
+    }
+    to {
+        background-color: green;
+    }
+} */
+
+#lastdiv{
+    background-color: aqua;
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid black;
+    /* animation: back 5s infinite;     */
+    opacity: 0.6;
+}
