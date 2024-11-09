@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the character encoding, viewport, and page title for better compatibility and accessibility -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attractive Webpage - WOC</title>
+    <!-- Internal CSS for styling the webpage -->
+    <style>
+      /* Styling for body, header, navigation, and footer */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header, footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        color: #4CAF50;
+      }
+      section, article, aside {
+        padding: 10px;
+        margin: 10px;
+      }
+      table, th, td {
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+        padding: 8px;
+        text-align: left;
+      }
+      table {
+        width: 100%;
+        margin: 10px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .highlight {
+        background-color: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with navigation links -->
+    <header>
+      <h1>WOC</h1>
+      <nav>
+        <!-- Anchor tags for navigating within the page -->
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main content area -->
+    <main>
+      <!-- Editable heading with description in title attribute -->
+      <h1 contenteditable="true">Heading 1 (Editable)</h1>
+      <h2 title="Secondary heading">Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5 title="Tertiary heading">Heading 5</h5>
+      <h6>Heading 6</h6>
+      <hr />
+
+      <!-- Paragraph with bold, emphasized, and underlined text -->
+      <p>
+        Lorem ipsum dolor sit amet, <strong title="Bold text">adipisicing elit</strong>.
+        <b>Laborum</b> laudantium atque magni obcaecati.
+      </p>
+      <p>
+        Example of <em>italicized text</em> and
+        <u>underlined <i>italic</i> text</u> with <br /> line breaks.
+      </p>
+    </main>
+
+    <hr />
+
+    <!-- List section with unordered, ordered, and definition lists -->
+    <section>
+      <!-- Unordered list -->
+      <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Ice Cream</li>
+      </ul>
+
+      <!-- Ordered list with id for internal linking -->
+      <ol id="home">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Ice Cream</li>
+      </ol>
+
+      <!-- Definition list with terms and descriptions -->
+      <dl id="about">
+        <dt>Coffee</dt>
+        <dd>A hot beverage brewed from ground coffee beans.</dd>
+        <dt>Tea</dt>
+        <dd>A popular aromatic drink made by pouring hot water over tea leaves.</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    <!-- Link section with external links and tooltips -->
+    <a href="https://www.example.com" target="_blank" title="Visit example website">Visit Example Website</a>
+    <hr />
+
+    <!-- Image with alt attribute for accessibility -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWBLK_gi-aDXHdfc_PBhzHQXglctjs5J6qQ&s" alt="Cute panda" />
+
+    <hr />
+
+    <!-- Table section with row and column spanning -->
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td colspan="2">John</td>
+        <td rowspan="2">25</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- Form section with various input types and labels -->
+    <form action="/submit.html" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required /> <br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /> <br />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required /> <br />
+
+      <!-- Additional form controls -->
+      <input type="file" name="file" id="file" />
+      <input type="color" name="color" id="color" />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <hr />
+
+    <!-- Media section with video and audio controls -->
+    <video controls id="contact">
+      <source src="https://file-examples.com/storage/fe504ae8c8672e49a9e2d51/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+      Video not supported
+    </video>
+
+    <audio controls>
+      <source src="music.mp3" type="audio/mp3" />
+      Audio not supported
+    </audio>
+
+    <hr />
+
+    <!-- Article and aside sections for additional content -->
+    <article>
+      <h1>Article 1</h1>
+      <p>Informational content related to the main page.</p>
+    </article>
+
+    <aside>
+      <h1>Aside Section</h1>
+      <p>Complementary information for the main content.</p>
+    </aside>
+
+    <hr />
+
+    <!-- Iframe for embedding external content -->
+    <iframe src="https://ui.aceternity.com/" frameborder="1" title="External Content"></iframe>
+
+    <hr />
+
+    <!-- Figure with image and caption -->
+    <figure>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPbeeKfxvbAjpn6b831Wf1gG0s7d0yQc_NoR1Sj=s1360-w1360-h1020" alt="Developer" />
+      <figcaption>Freelance Developer</figcaption>
+    </figure>
+
+    <hr />
+
+    <!-- Collapsible details section -->
+    <details>
+      <summary>More Info</summary>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWBLK_gi-aDXHdfc_PBhzHQXglctjs5J6qQ&s" alt="Cute panda" />
+      <p>Additional information displayed when expanded.</p>
+    </details>
+
+    <br /><br />
+
+    <!-- Highlighted text, progress bar, and meter -->
+    <p>Hello, I am <mark class="highlight">learnershakil</mark>, a full-stack developer.</p>
+    <label for="file">Progress:</label>
+    <progress id="file" value="62" max="100">62%</progress>
+
+    <label for="task">Gauge:</label>
+    <meter id="task" value="32" min="0" max="100">32%</meter>
+
+    <!-- Footer with marquee text -->
+    <footer>
+      <marquee behavior="scroll" direction="left"><p>&copy; 2024 Winter of code</p></marquee>
+    </footer>
+  </body>
+</html>
