@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #tmhekiya {
+        background-color: #0dfe8e;
+        color: #d82b2b;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        height: 200px;;
+    }
+</style>
+</head>
+<body>
+    
+    <div id="tmhekiya"></div>
+    <p id="greet">Hello, Student's</p>
+
+    <script>
+        const tmhekiya = document.getElementById('tmhekiya');
+        const greet = document.getElementById('greet');
+        greet.textContent = 'shakil u make me bore!!!';
+
+        greet.style.color = 'red';
+
+        const newElement = document.createElement('div');
+        console.log(newElement);
+        newElement.textContent = 'This is a new element';
+        tmhekiya.appendChild(newElement);
+
+        const div = document.querySelector('div');
+        div.remove();
+    </script>
+
+</body>
+</html>
