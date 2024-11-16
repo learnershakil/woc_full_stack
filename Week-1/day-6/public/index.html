@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Date Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 14px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coffee Date?</h1>
+    <form id="coffeeDateForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="message">Message (optional):</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Send Request</button>
+
+      <p class="error" id="errorMessage"></p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('coffeeDateForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Clear any previous error messages
+      document.getElementById('errorMessage').textContent = '';
+
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const date = document.getElementById('date').value.trim();
+
+      if (!name || !email || !date) {
+        document.getElementById('errorMessage').textContent = 'Please fill in all required fields!';
+        return;
+      }
+
+      // Simple validation passed, show a success message (can also send data to a server here)
+      alert(`Thank you, ${name}! Your coffee date request has been submitted for ${date}. We’ll contact you at ${email} soon!`);
+
+      // Optionally, reset the form after submission
+      document.getElementById('coffeeDateForm').reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do u want a date?</h1>
+    <script>
+         var a;
+        setTimeout(() => {
+             prompt("Enter your gender");
+        }, 3000).then((value) => {
+            if(value == 'male'){
+               confirm("Are you interested in dating sakshi?");}
+                else{
+                  confirm("Are you interested in dating rahul?");
+                }
+        }).then((value) => {
+            if(value == true){
+                alert("Sorry \nSakshi is not interested in dating you");
+            }else{
+                alert("Sorry \nRahul is not interested in dating you");
+            }
+        });
+        
+
+    </script>
+</body>
+</html>
