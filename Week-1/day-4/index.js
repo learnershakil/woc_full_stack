@@ -72,34 +72,36 @@
 
 // console.log(student.name + "is a student of " + student.location + "and he is " + student.age + "years old");
 
-// const express = require('express');
-// const app = express();
+const express = require('express');
+const cors = require('cors');
+const app = express();
 
-// let student = [{
-//     name: "Mona",
-//     age: 20,
-//     location: "LPU"
-// },{
-//     name: "shakil",
-//     age: 21,
-//     location: "LPU"
-// },{
-//     name: "shubham",
-//     age: 22,
-//     location: "LPU"
-// },{
-//     name: "ayush",
-//     age: 23,
-//     location: "LPU"
-// }]
+app.use(cors());
+let student = [{
+    name: "Mona",
+    age: 20,
+    location: "LPU"
+},{
+    name: "shakil",
+    age: 21,
+    location: "LPU"
+},{
+    name: "shubham",
+    age: 22,
+    location: "LPU"
+},{
+    name: "ayush",
+    age: 23,
+    location: "LPU"
+}]
 
-// app.get('/', (req, res) => {
-//     res.json(student);
-// });
+app.get('/', (req, res) => {
+    res.json(student);
+});
 
-// app.listen(3000, () => {
-//     console.log("Server is running on port 3000");
-// });
+app.listen(3000, () => {
+    console.log("Server is running on port 3000");
+});
 
 // let student = {
 //         name: "Mona",
@@ -178,25 +180,25 @@
 // console.log([...greet]);
 
 
-class ReservationForm {
-    constructor(name, address, year) {
-       this.name = name;
-       this.address = address;
-       this.year = year;
-    }
+// class ReservationForm {
+//     constructor(name, address, year) {
+//        this.name = name;
+//        this.address = address;
+//        this.year = year;
+//     }
     
-    getInfo(){
-        return `Name: ${this.name}, Address: ${this.address}, Year: ${this.year}`;
-    }
+//     getInfo(){
+//         return `Name: ${this.name}, Address: ${this.address}, Year: ${this.year}`;
+//     }
 
-    welcome(){
-        return "Welcome to the Reservation Form " + this.name;
- }
-}
+//     welcome(){
+//         return "Welcome to the Reservation Form " + this.name;
+//  }
+// }
  
- let Ayushman = new ReservationForm("Ayushman", "LPU", 2021);
- console.log(Ayushman.getInfo());
+//  let Ayushman = new ReservationForm("Ayushman", "LPU", 2021);
+//  console.log(Ayushman.getInfo());
 
- let mona = new ReservationForm("mona", "LPU", 18);
- console.log(mona.welcome());
+//  let mona = new ReservationForm("mona", "LPU", 18);
+//  console.log(mona.welcome());
 
